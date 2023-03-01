@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+
+  front:
+    command: sh -c "npm install && npm run dev"
+    ports:
+      # 複数環境作成する場合はPortがバッティングするので 3300:3000 のように左側だけ他の番号に変える
+      - 3000:3000

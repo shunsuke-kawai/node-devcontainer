@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  front:
+    image: node:18
+    working_dir: "/workspace"
+    # docker-compose up したコンテナを起動させ続ける
+    tty: true
+    volumes:
+      - ./:/workspace:cached
+      - front_node_modules:/workspace/node_modules
+      - ~/.ssh:/root/.ssh #sshキー
+      - ~/.gitconfig:/root/.gitconfig #gitの設定
+volumes:
+  front_node_modules:

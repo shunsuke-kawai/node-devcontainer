@@ -1,0 +1,42 @@
+{
+  "name": "front",
+  "dockerComposeFile": ["../docker-compose.yaml", "docker-compose.dev.yaml"],
+  "service": "front",
+  "shutdownAction": "none",
+  "workspaceFolder": "/workspace", 
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "eamodio.gitlens",
+        "donjayamanne.githistory",
+        "sgryjp.japanese-word-handler",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "quicktype.quicktype",
+        "cssho.vscode-svgviewer",
+        "wmaurer.change-case",
+        "sohamkamani.code-eol",
+        "bierner.color-info",
+        "formulahendry.auto-rename-tag"
+      ],
+      "settings": {
+        "files.encoding": "utf8",
+        "files.eol": "\n",
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      }
+    }
+  }
+}
