@@ -16,7 +16,7 @@ VSCode の Remote Containers を利用して細かい環境差異が発生しな
 Docker の中に VSCode やら node.js やらを入れてその中で開発を進めるナウい開発手法です。  
 公式ドキュメント →(https://code.visualstudio.com/docs/devcontainers/containers)  
 ![](img/2023-02-24-18-44-08.png)  
-どんな設定になっているかは [devcontainer.json](https://github.com/JMASON-dev/LAS-JMAS/blob/main/.devcontainer/devcontainer.json) を参照してください。
+どんな設定になっているかは [devcontainer.json](https://github.com/shunsuke-kawai/node-devcontainer/blob/main/.devcontainer/devcontainer.json) を参照してください。
 
 ## 開発方法
 
