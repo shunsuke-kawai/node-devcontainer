@@ -30,7 +30,7 @@ Docker の中に VSCode やら node.js やらを入れてその中で開発を�
 - Git のコミットとか Push はローカルで使い慣れたツール（SourceTree とか）を使ってもいいですし、DevContainer 内の VSCode にも Git 系の拡張機能は入れているのでそこでやってもいいです。（SSH キーは `%USERPROFILE%\.ssh` フォルダに置いてあるのを使うのでちがければコピーしてください。Mac は知らん。）
 
 ### うまく動かなかったら
-- ロカールのターミナルで以下で一回全部消す  
+- ローカルのターミナルで以下で一回全部消す  
 `docker-compose down -v --rmi local --remove-orphans`  
 - その後一回ローカルで立ち上げてみる  
 `docker-compose up`  
