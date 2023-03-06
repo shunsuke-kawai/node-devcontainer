@@ -28,3 +28,11 @@ Docker の中に VSCode やら node.js やらを入れてその中で開発を�
   さっきの><が DevContainer ってなってればコンテナ内で VSCode が動いているってことです。  
   ![](img/2023-02-24-19-00-22.png)
 - Git のコミットとか Push はローカルで使い慣れたツール（SourceTree とか）を使ってもいいですし、DevContainer 内の VSCode にも Git 系の拡張機能は入れているのでそこでやってもいいです。（SSH キーは `%USERPROFILE%\.ssh` フォルダに置いてあるのを使うのでちがければコピーしてください。Mac は知らん。）
+
+### うまく動かなかったら
+- ロカールのターミナルで以下で一回全部消す  
+`docker-compose down -v --rmi local --remove-orphans`  
+- その後一回ロカールで立ち上げてみる  
+`docker-compose up`  
+- その後DevContainer起動  
+`Reopen in Container`  
