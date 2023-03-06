@@ -32,7 +32,7 @@ Docker の中に VSCode やら node.js やらを入れてその中で開発を�
 ### うまく動かなかったら
 - ロカールのターミナルで以下で一回全部消す  
 `docker-compose down -v --rmi local --remove-orphans`  
-- その後一回ロカールで立ち上げてみる  
+- その後一回ローカルで立ち上げてみる  
 `docker-compose up`  
 - その後DevContainer起動  
 `Reopen in Container`  
